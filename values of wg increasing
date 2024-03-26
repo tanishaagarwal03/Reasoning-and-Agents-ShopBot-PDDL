@@ -381,3 +381,109 @@ time spent:    0.00 seconds instantiating 429 easy, 11 hard action templates
              111.83 seconds searching, evaluating 461886 states, to a max depth of 0
              111.83 seconds total time
 
+[elrond]s2211921: ./ff -E -g 5 -h 5 -o  domain-1.pddl -f problem-1-hard.pddl
+
+ff: parsing domain file
+domain 'SUPERMARKET' defined
+ ... done.
+ff: parsing problem file
+problem 'SUPERMARKET-PROBLEM-1-HARD' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is  best-first on 5*g(s) + 5*h(s) where
+    metric is  plan length
+
+advancing to distance:   45
+                         43
+                         42
+                         41
+                         40
+                         39
+                         38
+                         37
+                         36
+                         35
+                         34
+                         33
+                         32
+                         31
+                         30
+                         29
+                         28
+                         27
+                         26
+                         25
+                         24
+                         23
+                         22
+                         21
+                         20
+                         19
+                         18
+                         17
+                         16
+                         15
+                         14
+
+                         more than 2 hours thus timeout
+
+[elrond]s2211921: ./ff -E -g 3 -h 5 -o  domain-1.pddl -f problem-1-hard.pddl
+
+ff: parsing domain file
+domain 'SUPERMARKET' defined
+ ... done.
+ff: parsing problem file
+problem 'SUPERMARKET-PROBLEM-1-HARD' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is  best-first on 3*g(s) + 5*h(s) where
+    metric is  plan length
+
+advancing to distance:   45
+                         43
+                         42
+                         41
+                         40
+                         39
+                         38
+                         37
+                         36
+                         35
+                         34
+                         33
+                         32
+                         31
+                         30
+                         29
+                         28
+                         27
+                         26
+                         25
+                         24
+                         23
+                         22
+                         21
+                         20
+                         19
+                         18
+                         17 
+                         16
+                         15
+                         14
+                         13
+                         12
+                         11
+                         10 
+                          9
+
+                          more than 3 hours and timeout
