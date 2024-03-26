@@ -1,5 +1,5 @@
 (define (problem supermarket-problem-1-hard)
-  (:domain supermarket-domain-1)
+  (:domain supermarket)
   
   (:objects
     c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 c11 c12 c13 c14 c15 c16 c17 c18 - cell
@@ -26,7 +26,7 @@
     (is-scale scale) 
     (is-checkout checkout)
 
-    ;; 
+    ;; Define adjacencies
     (adjacent s1 s4) (adjacent s1 c1)
     (adjacent c1 s1) (adjacent c1 s5) (adjacent c1 c2)
     (adjacent c2 c1) (adjacent c2 s6) (adjacent c2 c3)
@@ -91,9 +91,9 @@
       (checked-out onion) 
       (checked-out ketchup) 
       (checked-out toothpaste) 
-      (checked-out toothbrush) 
+      (checked-out toothbrush)
       (checked-out pizza)
-      (checked-out cabbage) 
+      (checked-out cabbage)
       (checked-out tomato)
     )
   )
