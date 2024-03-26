@@ -1,0 +1,21 @@
+For Task 2.1, we're tasked with designing a harder problem instance while keeping the `domain-1.pddl` fixed. This requires creating a `problem-1-hard.pddl` that challenges the planner more than the initial problem setup. To increase the complexity, we can introduce more items that need to be weighed, add more items to the shopping list, increase the distance between items and the scale or checkout, or even introduce more obstacles in the supermarket layout that force the ShopBot to take longer paths. Here's how you might approach designing this harder problem.
+
+### Design Considerations for a Harder Problem
+1. **Increase the Number of Items to be Checked Out**: Adding more items to the shopping list inherently increases the complexity as the ShopBot has to plan more pick-up and drop-off actions.
+2. **Include More Weighable Items**: Weighing items adds an extra step to the process. By increasing the number of items that need to be weighed before checkout, the ShopBot's path becomes more complex.
+3. **Spread Out the Layout**: Placing items, the scale, and the checkout stand further apart from each other forces the ShopBot to travel more, thus increasing the planning complexity.
+4. **Introduce More Shelves and Aisle Cells**: A denser supermarket layout with more shelves and aisle cells can introduce additional navigation challenges for the ShopBot.
+5. **Obstacles or Restrictions**: Introducing temporary obstacles or restrictions (e.g., certain aisles are closed off) can force the ShopBot to find alternative routes, adding to the complexity.
+
+### Designing `problem-1-hard.pddl`
+Based on these considerations, the `problem-1-hard.pddl` could define a supermarket with a more complex layout and a longer shopping list including more items that require weighing. Here's a hypothetical approach:
+
+- **More Items**: Add more items to the shopping list, including at least 3-4 additional items that need to be weighed.
+- **Layout Changes**: Modify the layout to increase the distance between the scale, checkout, and the locations of the items on the shopping list. Introduce more shelves and make the navigation more complex.
+- **Weighable Items**: Include more items that need to be weighed before checkout, and place these items further from the weighing scale to increase travel time.
+- **Obstacles**: You could simulate obstacles by temporarily making certain aisles non-navigable, forcing the ShopBot to take longer paths around the supermarket.
+
+### Justification
+This harder problem setup increases the search space significantly by requiring the ShopBot to make more decisions about which items to pick up first, how to efficiently weigh items, and navigate a more complex supermarket layout. The increased number of actions (moving, picking up, dropping off, weighing) and the larger state space due to the more complex layout challenge the planner's ability to find an efficient solution, thus making it an appropriate benchmark for evaluating the performance impact of changing the heuristic evaluation function weights (`wg` and `wh`).
+
+By testing with this more challenging scenario, we can better understand the effects of heuristic weighting on planning performance, especially in terms of time taken to find a solution and the efficiency of the solution found.
