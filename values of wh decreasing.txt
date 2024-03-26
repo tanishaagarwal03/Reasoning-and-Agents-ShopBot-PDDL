@@ -1,0 +1,383 @@
+[elrond]s2211921: ./ff -E -g 1 -h 3 -o  domain-1.pddl -f problem-1-hard.pddl
+
+ff: parsing domain file
+domain 'SUPERMARKET' defined
+ ... done.
+ff: parsing problem file
+problem 'SUPERMARKET-PROBLEM-1-HARD' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is  best-first on 1*g(s) + 3*h(s) where
+    metric is  plan length
+
+advancing to distance:   45
+                         43
+                         42
+                         41
+                         40
+                         39
+                         38
+                         37
+                         36
+                         35
+                         34
+                         33
+                         32
+                         31
+                         30
+                         29
+                         28
+                         27
+                         26
+                         25
+                         24
+                         23
+                         22
+                         21
+                         20
+                         19
+                         18
+                         17
+                         16
+                         15
+                         14
+                         13
+                         12
+                         11
+                         10
+                          9
+                          8
+                          7
+                          6
+                          5
+                          4
+                          3
+                          2
+                          1
+                          0
+
+ff: found legal plan as follows
+
+step    0: MOVE SHOPBOT C18 C16
+        1: MOVE SHOPBOT C16 C11
+        2: PICK-UP SHOPBOT TOOTHBRUSH S7 C11
+        3: MOVE SHOPBOT C11 C16
+        4: MOVE SHOPBOT C16 C15
+        5: MOVE SHOPBOT C15 C14
+        6: MOVE SHOPBOT C14 C13
+        7: MOVE SHOPBOT C13 C10
+        8: MOVE SHOPBOT C10 C9
+        9: MOVE SHOPBOT C9 C8
+       10: MOVE SHOPBOT C8 C7
+       11: MOVE SHOPBOT C7 C12
+       12: DROP SHOPBOT TOOTHBRUSH C12 CHECKOUT
+       13: CHECK-OUT SHOPBOT TOOTHBRUSH CHECKOUT C12
+       14: MOVE SHOPBOT C12 C7
+       15: PICK-UP SHOPBOT PIZZA S4 C7
+       16: MOVE SHOPBOT C7 C12
+       17: DROP SHOPBOT PIZZA C12 CHECKOUT
+       18: CHECK-OUT SHOPBOT PIZZA CHECKOUT C12
+       19: MOVE SHOPBOT C12 C7
+       20: MOVE SHOPBOT C7 C8
+       21: MOVE SHOPBOT C8 C9
+       22: PICK-UP SHOPBOT KETCHUP S11 C9
+       23: MOVE SHOPBOT C9 C8
+       24: MOVE SHOPBOT C8 C7
+       25: MOVE SHOPBOT C7 C12
+       26: DROP SHOPBOT KETCHUP C12 CHECKOUT
+       27: CHECK-OUT SHOPBOT KETCHUP CHECKOUT C12
+       28: MOVE SHOPBOT C12 C7
+       29: MOVE SHOPBOT C7 C8
+       30: MOVE SHOPBOT C8 C9
+       31: MOVE SHOPBOT C9 C10
+       32: MOVE SHOPBOT C10 C4
+       33: MOVE SHOPBOT C4 C3
+       34: MOVE SHOPBOT C3 C2
+       35: MOVE SHOPBOT C2 C1
+       36: PICK-UP SHOPBOT ONION S1 C1
+       37: MOVE SHOPBOT C1 C2
+       38: MOVE SHOPBOT C2 C3
+       39: MOVE SHOPBOT C3 C4
+       40: MOVE SHOPBOT C4 C10
+       41: MOVE SHOPBOT C10 C13
+       42: MOVE SHOPBOT C13 C14
+       43: WEIGH-ITEM SHOPBOT ONION C14 SCALE
+       44: MOVE SHOPBOT C14 C13
+       45: MOVE SHOPBOT C13 C10
+       46: MOVE SHOPBOT C10 C9
+       47: MOVE SHOPBOT C9 C8
+       48: MOVE SHOPBOT C8 C7
+       49: MOVE SHOPBOT C7 C12
+       50: DROP SHOPBOT ONION C12 CHECKOUT
+       51: CHECK-OUT SHOPBOT ONION CHECKOUT C12
+       52: MOVE SHOPBOT C12 C7
+       53: MOVE SHOPBOT C7 C8
+       54: MOVE SHOPBOT C8 C9
+       55: MOVE SHOPBOT C9 C10
+       56: MOVE SHOPBOT C10 C4
+       57: MOVE SHOPBOT C4 C5
+       58: MOVE SHOPBOT C5 C6
+       59: PICK-UP SHOPBOT TOMATO S3 C6
+       60: MOVE SHOPBOT C6 C5
+       61: MOVE SHOPBOT C5 C4
+       62: MOVE SHOPBOT C4 C10
+       63: MOVE SHOPBOT C10 C13
+       64: MOVE SHOPBOT C13 C14
+       65: WEIGH-ITEM SHOPBOT TOMATO C14 SCALE
+       66: MOVE SHOPBOT C14 C13
+       67: MOVE SHOPBOT C13 C10
+       68: MOVE SHOPBOT C10 C9
+       69: MOVE SHOPBOT C9 C8
+       70: MOVE SHOPBOT C8 C7
+       71: MOVE SHOPBOT C7 C12
+       72: DROP SHOPBOT TOMATO C12 CHECKOUT
+       73: CHECK-OUT SHOPBOT TOMATO CHECKOUT C12
+       74: MOVE SHOPBOT C12 C7
+       75: MOVE SHOPBOT C7 C8
+       76: MOVE SHOPBOT C8 C9
+       77: PICK-UP SHOPBOT POTATO S6 C9
+       78: MOVE SHOPBOT C9 C10
+       79: MOVE SHOPBOT C10 C13
+       80: MOVE SHOPBOT C13 C14
+       81: WEIGH-ITEM SHOPBOT POTATO C14 SCALE
+       82: MOVE SHOPBOT C14 C13
+       83: MOVE SHOPBOT C13 C10
+       84: MOVE SHOPBOT C10 C9
+       85: MOVE SHOPBOT C9 C8
+       86: MOVE SHOPBOT C8 C7
+       87: MOVE SHOPBOT C7 C12
+       88: DROP SHOPBOT POTATO C12 CHECKOUT
+       89: CHECK-OUT SHOPBOT POTATO CHECKOUT C12
+       90: MOVE SHOPBOT C12 C7
+       91: MOVE SHOPBOT C7 C8
+       92: PICK-UP SHOPBOT CABBAGE S5 C8
+       93: MOVE SHOPBOT C8 C9
+       94: MOVE SHOPBOT C9 C10
+       95: MOVE SHOPBOT C10 C13
+       96: MOVE SHOPBOT C13 C14
+       97: WEIGH-ITEM SHOPBOT CABBAGE C14 SCALE
+       98: MOVE SHOPBOT C14 C13
+       99: MOVE SHOPBOT C13 C10
+      100: MOVE SHOPBOT C10 C9
+      101: MOVE SHOPBOT C9 C8
+      102: MOVE SHOPBOT C8 C7
+      103: MOVE SHOPBOT C7 C12
+      104: DROP SHOPBOT CABBAGE C12 CHECKOUT
+      105: CHECK-OUT SHOPBOT CABBAGE CHECKOUT C12
+      106: MOVE SHOPBOT C12 C7
+      107: MOVE SHOPBOT C7 C8
+      108: MOVE SHOPBOT C8 C9
+      109: MOVE SHOPBOT C9 C10
+      110: PICK-UP SHOPBOT TOOTHPASTE S8 C10
+      111: MOVE SHOPBOT C10 C9
+      112: MOVE SHOPBOT C9 C8
+      113: MOVE SHOPBOT C8 C7
+      114: MOVE SHOPBOT C7 C12
+      115: DROP SHOPBOT TOOTHPASTE C12 CHECKOUT
+      116: CHECK-OUT SHOPBOT TOOTHPASTE CHECKOUT C12
+     
+
+time spent:    0.00 seconds instantiating 429 easy, 11 hard action templates
+               0.00 seconds reachability analysis, yielding 89 facts and 88 actions
+               0.00 seconds creating final representation with 82 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.30 seconds searching, evaluating 36397 states, to a max depth of 0
+               0.30 seconds total time
+
+[elrond]s2211921: ./ff -E -g 1 -h 4 -o  domain-1.pddl -f problem-1-hard.pddl
+
+ff: parsing domain file
+domain 'SUPERMARKET' defined
+ ... done.
+ff: parsing problem file
+problem 'SUPERMARKET-PROBLEM-1-HARD' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is  best-first on 1*g(s) + 4*h(s) where
+    metric is  plan length
+
+advancing to distance:   45
+                         43
+                         42
+                         41
+                         40
+                         39
+                         38
+                         37
+                         36
+                         35
+                         34
+                         33
+                         32
+                         31
+                         30
+                         29
+                         28
+                         27
+                         26
+                         25
+                         24
+                         23
+                         22
+                         21
+                         20
+                         19
+                         18
+                         17
+                         16
+                         15
+                         14
+                         13
+                         12
+                         11
+                         10
+                          9
+                          8
+                          7
+                          6
+                          5
+                          4
+                          3
+                          2
+                          1
+                          0
+
+ff: found legal plan as follows
+
+step    0: MOVE SHOPBOT C18 C16
+        1: MOVE SHOPBOT C16 C11
+        2: PICK-UP SHOPBOT TOOTHBRUSH S7 C11
+        3: MOVE SHOPBOT C11 C16
+        4: MOVE SHOPBOT C16 C15
+        5: MOVE SHOPBOT C15 C14
+        6: MOVE SHOPBOT C14 C13
+        7: MOVE SHOPBOT C13 C10
+        8: MOVE SHOPBOT C10 C9
+        9: MOVE SHOPBOT C9 C8
+       10: MOVE SHOPBOT C8 C7
+       11: MOVE SHOPBOT C7 C12
+       12: DROP SHOPBOT TOOTHBRUSH C12 CHECKOUT
+       13: CHECK-OUT SHOPBOT TOOTHBRUSH CHECKOUT C12
+       14: MOVE SHOPBOT C12 C7
+       15: PICK-UP SHOPBOT PIZZA S4 C7
+       16: MOVE SHOPBOT C7 C12
+       17: DROP SHOPBOT PIZZA C12 CHECKOUT
+       18: CHECK-OUT SHOPBOT PIZZA CHECKOUT C12
+       19: MOVE SHOPBOT C12 C7
+       20: MOVE SHOPBOT C7 C8
+       21: MOVE SHOPBOT C8 C9
+       22: PICK-UP SHOPBOT KETCHUP S11 C9
+       23: MOVE SHOPBOT C9 C8
+       24: MOVE SHOPBOT C8 C7
+       25: MOVE SHOPBOT C7 C12
+       26: DROP SHOPBOT KETCHUP C12 CHECKOUT
+       27: CHECK-OUT SHOPBOT KETCHUP CHECKOUT C12
+       28: MOVE SHOPBOT C12 C7
+       29: MOVE SHOPBOT C7 C8
+       30: MOVE SHOPBOT C8 C9
+       31: MOVE SHOPBOT C9 C10
+       32: PICK-UP SHOPBOT TOOTHPASTE S8 C10
+       33: MOVE SHOPBOT C10 C9
+       34: MOVE SHOPBOT C9 C8
+       35: MOVE SHOPBOT C8 C7
+       36: MOVE SHOPBOT C7 C12
+       37: DROP SHOPBOT TOOTHPASTE C12 CHECKOUT
+       38: CHECK-OUT SHOPBOT TOOTHPASTE CHECKOUT C12
+       39: MOVE SHOPBOT C12 C7
+       40: MOVE SHOPBOT C7 C8
+       41: PICK-UP SHOPBOT CABBAGE S5 C8
+       42: MOVE SHOPBOT C8 C9
+       43: MOVE SHOPBOT C9 C10
+       44: MOVE SHOPBOT C10 C13
+       45: MOVE SHOPBOT C13 C14
+       46: WEIGH-ITEM SHOPBOT CABBAGE C14 SCALE
+       47: MOVE SHOPBOT C14 C13
+       48: MOVE SHOPBOT C13 C10
+       49: MOVE SHOPBOT C10 C9
+       50: MOVE SHOPBOT C9 C8
+       51: MOVE SHOPBOT C8 C7
+       52: MOVE SHOPBOT C7 C12
+       53: DROP SHOPBOT CABBAGE C12 CHECKOUT
+       54: CHECK-OUT SHOPBOT CABBAGE CHECKOUT C12
+       55: MOVE SHOPBOT C12 C7
+       56: MOVE SHOPBOT C7 C8
+       57: MOVE SHOPBOT C8 C9
+       58: MOVE SHOPBOT C9 C10
+       59: MOVE SHOPBOT C10 C4
+       60: MOVE SHOPBOT C4 C5
+       61: MOVE SHOPBOT C5 C6
+       62: PICK-UP SHOPBOT TOMATO S3 C6
+       63: MOVE SHOPBOT C6 C5
+       64: MOVE SHOPBOT C5 C4
+       65: MOVE SHOPBOT C4 C10
+       66: MOVE SHOPBOT C10 C13
+       67: MOVE SHOPBOT C13 C14
+       68: WEIGH-ITEM SHOPBOT TOMATO C14 SCALE
+       69: MOVE SHOPBOT C14 C13
+       70: MOVE SHOPBOT C13 C10
+       71: MOVE SHOPBOT C10 C9
+       72: MOVE SHOPBOT C9 C8
+       73: MOVE SHOPBOT C8 C7
+       74: MOVE SHOPBOT C7 C12
+       75: DROP SHOPBOT TOMATO C12 CHECKOUT
+       76: CHECK-OUT SHOPBOT TOMATO CHECKOUT C12
+       77: MOVE SHOPBOT C12 C7
+       78: MOVE SHOPBOT C7 C8
+       79: MOVE SHOPBOT C8 C9
+       80: PICK-UP SHOPBOT POTATO S6 C9
+       81: MOVE SHOPBOT C9 C10
+       82: MOVE SHOPBOT C10 C13
+       83: MOVE SHOPBOT C13 C14
+       84: WEIGH-ITEM SHOPBOT POTATO C14 SCALE
+       85: MOVE SHOPBOT C14 C13
+       86: MOVE SHOPBOT C13 C10
+       87: MOVE SHOPBOT C10 C9
+       88: MOVE SHOPBOT C9 C8
+       89: MOVE SHOPBOT C8 C7
+       90: MOVE SHOPBOT C7 C12
+       91: DROP SHOPBOT POTATO C12 CHECKOUT
+       92: CHECK-OUT SHOPBOT POTATO CHECKOUT C12
+       93: MOVE SHOPBOT C12 C7
+       94: MOVE SHOPBOT C7 C8
+       95: MOVE SHOPBOT C8 C9
+       96: MOVE SHOPBOT C9 C10
+       97: MOVE SHOPBOT C10 C4
+       98: MOVE SHOPBOT C4 C3
+       99: MOVE SHOPBOT C3 C2
+      100: MOVE SHOPBOT C2 C1
+      101: PICK-UP SHOPBOT ONION S1 C1
+      102: MOVE SHOPBOT C1 C2
+      103: MOVE SHOPBOT C2 C3
+      104: MOVE SHOPBOT C3 C4
+      105: MOVE SHOPBOT C4 C10
+      106: MOVE SHOPBOT C10 C13
+      107: MOVE SHOPBOT C13 C14
+      108: WEIGH-ITEM SHOPBOT ONION C14 SCALE
+      109: MOVE SHOPBOT C14 C13
+      110: MOVE SHOPBOT C13 C10
+      111: MOVE SHOPBOT C10 C9
+      112: MOVE SHOPBOT C9 C8
+      113: MOVE SHOPBOT C8 C7
+      114: MOVE SHOPBOT C7 C12
+      115: DROP SHOPBOT ONION C12 CHECKOUT
+      116: CHECK-OUT SHOPBOT ONION CHECKOUT C12
+     
+
+time spent:    0.00 seconds instantiating 429 easy, 11 hard action templates
+               0.00 seconds reachability analysis, yielding 89 facts and 88 actions
+               0.00 seconds creating final representation with 82 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 1485 states, to a max depth of 0
+               0.00 seconds total time
