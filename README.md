@@ -14,3 +14,5 @@ Using domain-1.pddl and problem-1-hard.pddl, design an experiment to evaluate th
 • Extensions: Extending the domain to deal with real-world challenges (50 marks).
 The objective of this task is to extend the domain to make it closer to the real world.
 [Inf2D_cw2.pdf](https://github.com/tanishaagarwal03/shopbot_pddl/files/14758266/Inf2D_cw2.pdf)
+
+All code can be found in the reasoning coursework folder.
