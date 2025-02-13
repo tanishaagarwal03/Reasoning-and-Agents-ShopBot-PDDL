@@ -16,3 +16,8 @@ The objective of this task is to extend the domain to make it closer to the real
 [Inf2D_cw2.pdf](https://github.com/tanishaagarwal03/shopbot_pddl/files/14758266/Inf2D_cw2.pdf)
 
 All code can be found in the reasoning coursework folder.
+
+## Contact
+
+Completed coursework by [Tanisha](https://github.com/tanishaagarwal03). Feel free to reach out if you have any questions or suggestions!
+
